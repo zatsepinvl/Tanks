@@ -25,9 +25,9 @@ namespace Tanks
             timer.Interval = 20;
             timer.Tick += new EventHandler(timer_Tick);
             Timer refresher = new Timer();
-            refresher.Interval = 10;
+            refresher.Interval = 1;
             refresher.Tick += new EventHandler(refresher_Tick);
-            //refresher.Start();
+            refresher.Start();
             timer.Start();
         }
 
