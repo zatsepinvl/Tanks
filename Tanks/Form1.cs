@@ -17,10 +17,29 @@ namespace Tanks
             DoubleBuffered = true;
         }
         Tank t;
+        Timer timer = new Timer();
         private void Form1_Load(object sender, EventArgs e)
         {
             TankDirector d = new TankDirector();
-            t = d.Construct(new IBuilder<Tank>[1] { new TankDefaultBuilder() });
+            t = d.Construct(new IBuilder<Tank>[] { new TankDefaultBuilder(), new TankUserBuilder(this) });
+            timer.Interval = 20;
+            timer.Tick += new EventHandler(timer_Tick);
+            Timer refresher = new Timer();
+            refresher.Interval = 10;
+            refresher.Tick += new EventHandler(refresher_Tick);
+            //refresher.Start();
+            timer.Start();
+        }
+
+        void refresher_Tick(object sender, EventArgs e)
+        {
+            Refresh();
+        }
+
+        void timer_Tick(object sender, EventArgs e)
+        {
+            t.Tick();
+            Refresh();
         }
 
         private void Form1_Paint(object sender, PaintEventArgs e)
@@ -30,14 +49,7 @@ namespace Tanks
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            switch (e.KeyCode)
-            {
-                case Keys.Left: t.MoveLeft(); break;
-                case Keys.Right: t.MoveRight(); break;
-                case Keys.Up: t.MoveUp(); break;
-                case Keys.Down: t.MoveDown(); break;
-            }
-            Refresh();
+            
         }
     }
 }

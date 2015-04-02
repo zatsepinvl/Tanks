@@ -5,7 +5,7 @@ using System.Drawing;
 namespace Tanks
 {
 
-    public class Tank : GameDynamicObject
+    public class Tank:IGameObject
     {
         protected int health;
         public int Health
@@ -39,6 +39,7 @@ namespace Tanks
                 }
             }
         }
+
         public TankStrategy Strategy { get; set; }
 
         public event Action<Tank> HealthChanged;
@@ -55,7 +56,7 @@ namespace Tanks
         {
             if (Strategy != null)
             {
-                Strategy.Algorithm(this);
+                Strategy.Algorithm();
             }
         }
 

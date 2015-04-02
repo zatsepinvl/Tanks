@@ -15,7 +15,7 @@ namespace Tanks
         public const int bodyDefense = 40;
         public const int bodyWeight = 2000;
         public const int tankHealth = 100;
-        public const int tankSpeed = 10;
+        public const int tankSpeed = 5;
         public static Color bodyColor = Color.DarkGreen;
         public static Color towerColor = Color.Green;
         public static Color barrelColor = Color.Black;

@@ -8,6 +8,7 @@ namespace Tanks
     public abstract class Strategy<Context,Obj> 
     {
         protected Context context;
-        public abstract void Algorithm(Obj arg);
+        protected Obj arg;
+        public abstract void Algorithm();
     }
 }

@@ -49,7 +49,7 @@
     <Compile Include="Barrel.cs" />
     <Compile Include="Body.cs" />
     <Compile Include="EmptyStrategy.cs" />
-    <Compile Include="GameDynamicObject.cs" />
+    <Compile Include="GameObject.cs" />
     <Compile Include="IBuilder.cs" />
     <Compile Include="Director.cs" />
     <Compile Include="Field.cs" />
@@ -75,8 +75,10 @@
     <Compile Include="TankStateDestroyed.cs" />
     <Compile Include="TankStateLiving.cs" />
     <Compile Include="TankStrategy.cs" />
+    <Compile Include="TankUserBuilder.cs" />
     <Compile Include="TextureObject.cs" />
     <Compile Include="Tower.cs" />
+    <Compile Include="UserStrategy.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

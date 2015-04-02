@@ -3,9 +3,8 @@ using System.Drawing;
 
 namespace Tanks
 {
-    public interface GameDynamicObject
+    public interface IGameObject
     {
         void Tick();
-        void Draw(Graphics g);
     }
 }
