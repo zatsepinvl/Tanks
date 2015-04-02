@@ -1,0 +1,3 @@
+D:\Обучение\Программирование\C#\Tanks\Tanks\obj\x86\Release\Tanks.Form1.resources
+D:\Обучение\Программирование\C#\Tanks\Tanks\obj\x86\Release\Tanks.Properties.Resources.resources
+D:\Обучение\Программирование\C#\Tanks\Tanks\obj\x86\Release\Tanks.csproj.GenerateResource.Cache

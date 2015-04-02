@@ -1,0 +1,8 @@
+D:\Обучение\Программирование\C#\Tanks\Tanks\obj\x86\Debug\Tanks.Properties.Resources.resources
+D:\Обучение\Программирование\C#\Tanks\Tanks\obj\x86\Debug\Tanks.csproj.GenerateResource.Cache
+D:\Обучение\Программирование\C#\Tanks\Tanks\bin\Debug\Tanks.exe
+D:\Обучение\Программирование\C#\Tanks\Tanks\bin\Debug\Tanks.pdb
+D:\Обучение\Программирование\C#\Tanks\Tanks\obj\x86\Debug\Tanks.exe
+D:\Обучение\Программирование\C#\Tanks\Tanks\obj\x86\Debug\Tanks.pdb
+D:\Обучение\Программирование\C#\Tanks\Tanks\obj\x86\Debug\Tanks.csprojResolveAssemblyReference.cache
+D:\Обучение\Программирование\C#\Tanks\Tanks\obj\x86\Debug\Tanks.Form1.resources
